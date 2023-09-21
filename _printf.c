@@ -26,13 +26,13 @@ int _printf(const char *format, ...)
 			switch (c)
 			{
 				case 'c':
-					char_printed = print_char(args);
+					chars_printed = print_char(args);
 					break;
 				case 's':
-					char_printed = print_string(args);
+					chars_printed = print_string(args);
 					break;
 				case '%':
-					char_printed = print_percent();
+					chars_printed = print_percent();
 					break;
 				default:
 					_putchar('%');	/* Print '%' and then the unknown specifier */
